@@ -40,6 +40,9 @@ header h1 {
     flex: 1;
     background-color: lightgreen;
 }
+.right section {
+    margin-bottom: 20px;
+}
 p {
     font-size: 18px;
     line-height: 1.5;
@@ -76,6 +79,21 @@ img {
     max-width: 100%;
     border-radius: 10px;
 }
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box2 {
+    width: 150px;
+    height: 100px;
+    background-color: cadetblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 button {
     background-color: blue;
     color: white;
@@ -89,6 +107,20 @@ button {
 button:hover {
     background-color: darkblue;
     transform: translateY(-5px);;
+}
+
+.card {
+    position: relative;
+}
+.badge {
+    position: absolute;
+    background-color: darkslategrey;
+    color: #ddd;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 10;
 }
 
 @media (max-width: 768px) {
